@@ -1,0 +1,27 @@
+{
+  "name": "NumediaTest",
+  "description": "NodeJS Numedia technical test",
+  "version": "0.1.0",
+  "private": true,
+  "author": "Axel Moussard <axel.moussard@gmail.com>",
+  "contributors": [
+    {
+      "name": "Axel Moussard",
+      "email": "axel.moussard@gmail.com"
+    }
+  ],
+  "scripts": {
+      "start": "node ./server.js"
+  },
+  "dependencies": {
+    "express": "~4.4.5",
+    "config": "~0.4.36",
+    "js-yaml": "~3.0.2",
+    "mysql": "~2.3.2"
+  },
+  "noAnalyze": true,
+  "license": "MIT",
+  "engine": {
+    "node": ">=0.8.8"
+  }
+}
