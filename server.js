@@ -1,15 +1,14 @@
 // "includes"
 var express = require('express');
-process.env.NODE_CONFIG_PERSIST_ON_CHANGE='N';
 var config = require('config');
 
-
+// Creation of the application
 var app = express();
+// Include of routes methods
 var routes = require('./router/routes');
 
 // Set the listening port for the application (in configuration)
 app.set('port', config.node_application.port);
-app.set('address', config.node_application.domain);
 
 // handle the error "safely"
 process.on('uncaughtException', function(err) {
